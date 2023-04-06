@@ -2,3 +2,33 @@
 2023-04-06 19:58:49,817 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:546]
 2023-04-06 19:58:54,350 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:546]
 2023-04-06 19:58:59,121 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:546]
+2023-04-06 20:02:18,517 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:545]
+2023-04-06 20:09:02,268 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:571]
+2023-04-06 20:09:24,437 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:571]
+2023-04-06 20:09:41,625 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:571]
+2023-04-06 20:10:39,260 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:571]
+2023-04-06 20:10:41,563 ERROR: Exception on /artists/create [POST] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 486, in create_artist_submission
+    abort(exc)
+UnboundLocalError: local variable 'exc' referenced before assignment
+2023-04-06 20:10:59,638 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:572]
+2023-04-06 20:11:42,389 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:572]
+2023-04-06 20:14:29,314 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:566]
+2023-04-06 20:16:23,763 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:566]
+2023-04-06 20:16:50,476 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:18:12,642 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:18:19,097 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:18:46,311 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:18:48,524 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:19:02,509 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:19:05,685 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
+2023-04-06 20:19:38,917 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:567]
