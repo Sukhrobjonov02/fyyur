@@ -397,3 +397,1155 @@ Traceback (most recent call last):
   File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 384, in show_artist
     data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
 IndexError: list index out of range
+2023-04-08 15:32:58,101 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:552]
+2023-04-08 15:59:41,072 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:565]
+2023-04-08 15:59:42,637 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 117, in venues
+    "city": venuelists.city,
+AttributeError: 'Query' object has no attribute 'city'
+2023-04-08 16:00:30,564 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:565]
+2023-04-08 16:00:31,776 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 117, in venues
+    "city": venuelists.city,
+AttributeError: 'Query' object has no attribute 'city'
+2023-04-08 16:01:12,947 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:565]
+2023-04-08 16:01:14,174 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 117, in venues
+    "city": venuelists.city,
+AttributeError: 'list' object has no attribute 'city'
+2023-04-08 16:02:16,091 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:566]
+2023-04-08 16:02:17,246 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 118, in venues
+    "city": venuelists.city,
+AttributeError: 'list' object has no attribute 'city'
+2023-04-08 16:03:52,210 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:564]
+2023-04-08 16:03:54,448 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 116, in venues
+    "city": venuelists.city,
+AttributeError: 'list' object has no attribute 'city'
+2023-04-08 16:05:09,668 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:565]
+2023-04-08 16:05:11,949 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 117, in venues
+    "city": result[0].city,
+AttributeError: 'str' object has no attribute 'city'
+2023-04-08 16:05:32,667 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:568]
+2023-04-08 16:05:33,518 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 120, in venues
+    "city": result[0].city,
+AttributeError: 'str' object has no attribute 'city'
+2023-04-08 16:05:49,393 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:568]
+2023-04-08 16:09:05,534 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:572]
+2023-04-08 16:09:07,476 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 124, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'list' object has no attribute 'id'
+2023-04-08 16:09:22,235 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:572]
+2023-04-08 16:09:23,157 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 124, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'list' object has no attribute 'id'
+2023-04-08 16:09:40,352 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:572]
+2023-04-08 16:09:42,310 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 124, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'list' object has no attribute 'id'
+2023-04-08 16:09:55,871 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:572]
+2023-04-08 16:09:56,830 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 124, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'list' object has no attribute 'id'
+2023-04-08 16:10:34,721 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:569]
+2023-04-08 16:15:07,681 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 16:15:13,239 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:15:40,107 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:15:41,281 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 122, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:15:42,074 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 122, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:16:01,308 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:16:02,339 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    print(venue[0])
+TypeError: 'Venue' object is not subscriptable
+2023-04-08 16:16:17,791 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:16:19,570 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    print(venue.id)
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:16:33,708 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:16:35,308 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    print(venue.id)
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:16:59,363 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 16:17:00,701 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:17:53,867 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:17:55,318 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    print(venue.id)
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:18:07,191 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:18:08,313 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    print(venue["id"])
+TypeError: 'Venue' object is not subscriptable
+2023-04-08 16:18:17,346 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:18:22,352 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    print(venue)
+TypeError: 'Venue' object is not subscriptable
+2023-04-08 16:18:29,601 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:18:31,806 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 122, in venues
+    shows = Show.query.filter_by(venue_id=venue.id).all()
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:18:52,018 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 16:18:53,152 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 122, in venues
+    shows = Show.query.filter_by(venue_id=venue_id).all()
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:19:33,168 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 16:19:34,341 ERROR: Exception on /venues [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 121, in venues
+    venue_id = venue.id
+AttributeError: 'dict' object has no attribute 'id'
+2023-04-08 16:24:16,634 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 16:24:26,485 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 16:44:40,559 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 16:57:59,506 ERROR: Exception on /artists/1 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 389, in show_artist
+    data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
+IndexError: list index out of range
+2023-04-08 17:05:33,219 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 17:05:46,638 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 17:12:24,993 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:556]
+2023-04-08 17:31:15,837 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:552]
+2023-04-08 17:48:18,454 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:487]
+2023-04-08 17:48:27,453 ERROR: Exception on /venues/2 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 154, in show_venue
+    "id": venue.id,
+AttributeError: 'list' object has no attribute 'id'
+2023-04-08 17:48:39,919 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:487]
+2023-04-08 17:48:41,468 ERROR: Exception on /venues/2 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 154, in show_venue
+    "id": venue.id,
+AttributeError: 'Query' object has no attribute 'id'
+2023-04-08 17:48:51,028 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:487]
+2023-04-08 17:49:04,408 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:488]
+2023-04-08 17:49:08,324 ERROR: Exception on /venues/2 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 155, in show_venue
+    "id": venue.id,
+AttributeError: 'list' object has no attribute 'id'
+2023-04-08 17:49:21,928 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:487]
+2023-04-08 17:53:28,568 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:491]
+2023-04-08 18:17:47,540 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:507]
+2023-04-08 18:18:06,479 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 154, in show_venue
+    print(shows[0])
+IndexError: list index out of range
+2023-04-08 18:27:29,699 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:465]
+2023-04-08 18:27:32,402 ERROR: Exception on /artists/5 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 268, in show_artist
+    shows = Show.query.filter_by(venue_id=venue_id).all()
+NameError: name 'venue_id' is not defined
+2023-04-08 18:27:50,330 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:465]
+2023-04-08 18:39:20,119 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:466]
+2023-04-08 18:41:51,592 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:470]
+2023-04-08 18:48:54,300 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:489]
+2023-04-08 18:51:01,249 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:489]
+2023-04-08 18:51:14,749 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:489]
+2023-04-08 18:51:36,509 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:490]
+2023-04-08 18:51:38,620 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 327, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 18:52:11,101 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:488]
+2023-04-08 18:52:13,530 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 323, in edit_artist
+    form = ArtistForm(data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/wtforms/form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/wtforms/form.py", line 106, in process
+    formdata = self.meta.wrap_formdata(self, formdata)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/wtforms/meta.py", line 45, in wrap_formdata
+    raise TypeError(
+TypeError: formdata should be a multidict-type wrapper that supports the 'getlist' method
+2023-04-08 18:52:26,809 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:488]
+2023-04-08 18:55:27,010 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 18:55:30,232 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:00:01,267 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    "image_link": artist.image_link,
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:00:06,417 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    "image_link": artist.image_link,
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:00:10,388 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:499]
+2023-04-08 19:00:12,243 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 336, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:25:24,595 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:499]
+2023-04-08 19:25:32,111 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 308, in edit_artist
+    artist = Artist.query.get(artist_id).all()
+AttributeError: 'Artist' object has no attribute 'all'
+2023-04-08 19:25:48,980 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:499]
+2023-04-08 19:25:58,021 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 336, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:26:50,869 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:26:55,693 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:27:25,010 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:27:27,223 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+NameError: name 'data' is not defined
+2023-04-08 19:28:23,231 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:28:24,999 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 308, in edit_artist
+    artist = Artist.query.get(Artist, artist_id)
+TypeError: Query.get() takes 2 positional arguments but 3 were given
+2023-04-08 19:29:47,494 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:29:48,695 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 308, in edit_artist
+    artist = Artist.query.get(Artist, artist_id)
+TypeError: Query.get() takes 2 positional arguments but 3 were given
+2023-04-08 19:30:07,098 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:30:07,882 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 308, in edit_artist
+    artist = Artist.query.get(id=artist_id)
+TypeError: Query.get() got an unexpected keyword argument 'id'
+2023-04-08 19:30:29,773 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:30:30,510 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 310, in edit_artist
+    form.name = artist.name
+AttributeError: 'list' object has no attribute 'name'
+2023-04-08 19:30:43,894 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:485]
+2023-04-08 19:30:44,537 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 311, in edit_artist
+    form.name = artist.name
+AttributeError: 'list' object has no attribute 'name'
+2023-04-08 19:31:01,258 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:31:01,905 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+NameError: name 'data' is not defined
+2023-04-08 19:31:11,445 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:485]
+2023-04-08 19:31:11,977 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 322, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+NameError: name 'data' is not defined
+2023-04-08 19:31:24,107 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:485]
+2023-04-08 19:31:24,793 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 311, in edit_artist
+    form.name = artist.name
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 19:31:42,233 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:485]
+2023-04-08 19:31:44,800 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 311, in edit_artist
+    form.name = artist.name
+AttributeError: 'list' object has no attribute 'name'
+2023-04-08 19:32:11,736 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:486]
+2023-04-08 19:32:12,536 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 312, in edit_artist
+    form.name = artist.name
+AttributeError: 'list' object has no attribute 'name'
+2023-04-08 19:32:35,713 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:32:37,018 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 308, in edit_artist
+    artist = Artist.query.filter(id=artist_id).all()
+TypeError: Query.filter() got an unexpected keyword argument 'id'
+2023-04-08 19:34:36,960 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:499]
+2023-04-08 19:34:39,574 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 336, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:35:12,734 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:486]
+2023-04-08 19:35:13,443 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 323, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:35:27,552 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:498]
+2023-04-08 19:35:28,417 ERROR: Exception on /artists/4/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 335, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:35:37,010 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:498]
+2023-04-08 19:35:43,196 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 335, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:36:47,875 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:36:50,868 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:38:58,199 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:39:00,119 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 310, in edit_artist
+    form["name"] = artist.name
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/wtforms/form.py", line 289, in __setitem__
+    raise TypeError("Fields may not be added to Form instances, only classes.")
+TypeError: Fields may not be added to Form instances, only classes.
+2023-04-08 19:39:18,552 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:39:19,158 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:39:53,731 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:474]
+2023-04-08 19:40:08,125 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:474]
+2023-04-08 19:40:09,040 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 311, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:40:16,361 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 311, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:40:33,153 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:483]
+2023-04-08 19:40:33,928 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 309, in edit_artist
+    form.name = artist.name
+NameError: name 'artist' is not defined
+2023-04-08 19:40:47,772 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:40:48,914 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 5, in block 'content'
+    <form class="form" method="post" action="/artists/{{artist.id}}/edit">
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'artist' is undefined
+2023-04-08 19:41:00,442 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:484]
+2023-04-08 19:41:01,223 ERROR: Exception on /artists/1/edit [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 321, in edit_artist
+    return render_template('forms/edit_artist.html', form=form, artist=artist)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/forms/edit_artist.html", line 9, in block 'content'
+    {{ form.name(class_ = 'form-control', autofocus = true) }}
+TypeError: 'str' object is not callable
+2023-04-08 19:41:25,229 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:487]
+2023-04-08 19:43:23,961 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:492]
+2023-04-08 19:50:12,716 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:497]
+2023-04-08 19:53:40,069 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:518]
