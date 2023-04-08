@@ -32,16 +32,18 @@ migrate = Migrate(app, db)
 # Models.
 #----------------------------------------------------------------------------#
 
-Show = db.Table('Show',
-    db.Column('venue_id', db.Integer, db.ForeignKey('Venue.id'), primary_key=True),
-    db.Column('artist_id', db.Integer, db.ForeignKey('Artist.id'), primary_key=True),
-    db.Column('start_time', db.DateTime, default=datetime.today(), nullable=False)
-)
+class Show(db.Model):
+   __tablename__ = 'show'
 
+   venue_id = db.Column(db.Integer, db.ForeignKey('venue.id'), primary_key=True)
+   artist_id = db.Column(db.Integer, db.ForeignKey('artist.id'), primary_key=True)
+   start_time = db.Column(db.DateTime, default=datetime.today(), nullable=False)
+   artist = db.relationship("Artist", back_populates="show_artist")
+   venue = db.relationship("Venue", back_populates="show_venue")
 
 
 class Venue(db.Model):
-    __tablename__ = 'Venue'
+    __tablename__ = 'venue'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
@@ -55,10 +57,10 @@ class Venue(db.Model):
     website_link = db.Column(db.String(120))
     seeking_talent = db.Column(db.Boolean)
     seeking_description = db.Column(db.String(120))
-    artists = db.relationship('Artist', secondary=Show, backref=db.backref('venues', lazy=True))
+    show_venue = db.relationship('Show', back_populates="venue")
 
 class Artist(db.Model):
-    __tablename__ = 'Artist'
+    __tablename__ = 'artist'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
@@ -71,6 +73,7 @@ class Artist(db.Model):
     website_link = db.Column(db.String(120))
     seeking_venue = db.Column(db.Boolean)
     seeking_description = db.Column(db.String(120))
+    show_artist = db.relationship('Show', back_populates='artist')
 
 #----------------------------------------------------------------------------#
 # Filters.
@@ -234,7 +237,6 @@ def create_venue_form():
 
 @app.route('/venues/create', methods=['POST'])
 def create_venue_submission():
-  error = False
 
   try:
     def form_get(name):
@@ -258,7 +260,6 @@ def create_venue_submission():
     db.session.commit()
     flash('Venue ' + name + ' was successfully listed!')
   except:
-     error = True
      db.session.rollback()
      flash('An error occured. Venue ' + name + ' could not be listed.')
   finally:
@@ -451,7 +452,6 @@ def create_artist_form():
 @app.route('/artists/create', methods=['POST'])
 def create_artist_submission():
   # called upon submitting the new artist listing form
-  error = False
 
   try:
     def form_get(name):
@@ -474,7 +474,6 @@ def create_artist_submission():
     # on successful db insert, flash success
     flash('Artist ' + name + ' was successfully listed!')
   except Exception as exc:
-    error = True
     db.session.rollback()
     print(exc)
     flash('An error occurred. Artist ' + name + ' could not be listed.')
@@ -538,14 +537,26 @@ def create_shows():
 @app.route('/shows/create', methods=['POST'])
 def create_show_submission():
   # called to create new shows in the db, upon submitting new show listing form
-  # TODO: insert form data as a new Show record in the db, instead
+  error = False
 
-  # on successful db insert, flash success
-  flash('Show was successfully listed!')
-  # TODO: on unsuccessful db insert, flash an error instead.
-  # e.g., flash('An error occurred. Show could not be listed.')
-  # see: http://flask.pocoo.org/docs/1.0/patterns/flashing/
-  return render_template('pages/home.html')
+  try:
+    def form_get(name):
+       return request.form.get(name)
+    artist_id = form_get('artist_id')
+    venue_id = form_get('venue_id')
+    start_time = form_get('start_time')
+  
+    show = Show(artist_id=artist_id, venue_id=venue_id, start_time=start_time)
+    db.session.add(show)
+    db.session.commit()
+    flash('Show was successfully listed!')
+  except Exception as exc:
+    db.session.rollback()
+    print(exc)
+    flash('An error occurred. Show could not be listed.')
+  finally:
+    db.session.close()
+    return render_template('pages/home.html')
 
 @app.errorhandler(404)
 def not_found_error(error):
