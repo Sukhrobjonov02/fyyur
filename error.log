@@ -43,3 +43,357 @@ UnboundLocalError: local variable 'exc' referenced before assignment
 2023-04-08 13:10:22,359 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:578]
 2023-04-08 13:10:31,907 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:578]
 2023-04-08 13:10:51,047 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:578]
+2023-04-08 13:16:11,396 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:578]
+2023-04-08 13:28:24,742 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:575]
+2023-04-08 13:28:29,507 ERROR: Exception on /artists/1 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 384, in show_artist
+    data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
+IndexError: list index out of range
+2023-04-08 13:33:13,734 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:551]
+2023-04-08 13:33:16,968 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 495, in shows
+    "venue_name": Venue.query.filter_by(show.venue_id).name,
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+2023-04-08 13:33:18,920 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 495, in shows
+    "venue_name": Venue.query.filter_by(show.venue_id).name,
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+2023-04-08 13:41:11,763 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:555]
+2023-04-08 13:41:16,141 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 495, in shows
+    artist = Artist.query.filter_by(artist_id)
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+2023-04-08 13:42:01,392 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:555]
+2023-04-08 13:42:04,499 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 499, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:42:26,951 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 13:42:29,305 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 501, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:42:54,983 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 13:42:57,390 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 501, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:43:46,936 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 13:43:48,446 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:44:05,246 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:44:25,458 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 13:44:26,860 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:44:41,873 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:44:50,692 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 13:44:52,106 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:46:01,836 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 13:46:09,785 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 13:46:11,159 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 496, in shows
+    artist = Artist.query.filter_by(id==artist_id)
+TypeError: Query.filter_by() takes 1 positional argument but 2 were given
+2023-04-08 13:46:32,465 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:558]
+2023-04-08 13:46:34,509 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:46:57,524 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    "artist_id": show.artist_id,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:47:06,894 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:557]
+2023-04-08 13:47:08,111 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 501, in shows
+    "venue_name": venue.name,
+AttributeError: 'Query' object has no attribute 'name'
+2023-04-08 13:48:03,772 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:551]
+2023-04-08 13:48:05,978 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 502, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/pages/shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/templates/pages/shows.html", line 9, in block 'content'
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 83, in format_datetime
+    date = dateutil.parser.parse(value)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 640, in parse
+    res, skipped_tokens = self._parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 719, in _parse
+    l = _timelex.split(timestr)         # Splits the timestr into tokens
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 201, in split
+    return list(cls(s))
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 69, in __init__
+    raise TypeError('Parser must be a string or character stream, not '
+TypeError: Parser must be a string or character stream, not datetime
+2023-04-08 14:07:28,854 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:551]
+2023-04-08 14:07:33,551 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 499, in shows
+    "start_time": format_datetime(show.start_time)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 83, in format_datetime
+    date = dateutil.parser.parse(value)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 640, in parse
+    res, skipped_tokens = self._parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 719, in _parse
+    l = _timelex.split(timestr)         # Splits the timestr into tokens
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 201, in split
+    return list(cls(s))
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 69, in __init__
+    raise TypeError('Parser must be a string or character stream, not '
+TypeError: Parser must be a string or character stream, not datetime
+2023-04-08 14:07:49,563 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 499, in shows
+    "start_time": str(format_datetime(show.start_time)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 83, in format_datetime
+    date = dateutil.parser.parse(value)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 640, in parse
+    res, skipped_tokens = self._parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 719, in _parse
+    l = _timelex.split(timestr)         # Splits the timestr into tokens
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 201, in split
+    return list(cls(s))
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 69, in __init__
+    raise TypeError('Parser must be a string or character stream, not '
+TypeError: Parser must be a string or character stream, not datetime
+2023-04-08 14:08:11,383 ERROR: Exception on /shows [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 499, in shows
+    "start_time": format_datetime(str(show.start_time))
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 83, in format_datetime
+    date = dateutil.parser.parse(value)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 1368, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 640, in parse
+    res, skipped_tokens = self._parse(timestr, **kwargs)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 719, in _parse
+    l = _timelex.split(timestr)         # Splits the timestr into tokens
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 201, in split
+    return list(cls(s))
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/dateutil/parser/_parser.py", line 69, in __init__
+    raise TypeError('Parser must be a string or character stream, not '
+TypeError: Parser must be a string or character stream, not datetime
+2023-04-08 14:08:16,722 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:551]
+2023-04-08 14:11:07,612 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:588]
+2023-04-08 14:11:32,214 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:551]
+2023-04-08 14:11:34,884 ERROR: Exception on /artists/1 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 384, in show_artist
+    data = list(filter(lambda d: d['id'] == artist_id, [data1, data2, data3]))[0]
+IndexError: list index out of range
