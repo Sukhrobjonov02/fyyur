@@ -1549,3 +1549,287 @@ TypeError: 'str' object is not callable
 2023-04-08 19:43:23,961 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:492]
 2023-04-08 19:50:12,716 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:497]
 2023-04-08 19:53:40,069 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:518]
+2023-04-08 23:32:37,090 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:518]
+2023-04-09 00:00:50,107 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:02:56,942 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:05:51,487 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:06:52,606 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:08:34,078 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:14:46,500 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:15:16,501 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:15:19,579 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:15:58,899 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:16:26,500 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:19:24,611 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:19:29,331 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:20:01,759 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:21:01,902 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:21:55,300 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:22:10,426 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:22:39,701 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:23:01,397 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:23:22,146 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:27:37,360 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:31:48,172 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:32:48,135 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:33:56,941 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:34:02,160 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:34:29,371 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:36:37,322 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:36:54,382 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:37:06,742 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:37:13,890 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:37:18,796 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:37:29,913 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:38:42,231 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:39:24,038 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:42:33,940 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:42:48,746 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:43:05,628 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:43:23,294 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:43:41,423 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:47:29,978 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:47:56,099 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:48:38,486 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:49:55,596 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:50:16,287 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:50:31,985 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:527]
+2023-04-09 00:51:59,598 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:528]
+2023-04-09 00:52:18,926 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:528]
+2023-04-09 00:52:28,902 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:528]
+2023-04-09 00:52:34,041 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:52:36,672 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:52:48,894 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:53:57,179 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:529]
+2023-04-09 00:54:29,697 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:530]
+2023-04-09 00:54:46,285 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:529]
+2023-04-09 00:56:43,234 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:529]
+2023-04-09 00:56:52,053 ERROR: Exception on /venues/3 [GET] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 165, in show_venue
+    upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
+UnboundLocalError: local variable 'show' referenced before assignment
+2023-04-09 00:57:23,431 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:530]
+2023-04-09 00:57:31,223 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:530]
+2023-04-09 00:58:18,552 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 00:58:36,040 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 00:59:07,428 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 00:59:16,735 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 00:59:33,689 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:00:44,395 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:535]
+2023-04-09 01:05:22,065 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:537]
+2023-04-09 01:05:58,771 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:539]
+2023-04-09 01:06:15,994 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:538]
+2023-04-09 01:06:33,631 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:536]
+2023-04-09 01:06:43,549 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:536]
+2023-04-09 01:07:21,363 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:07:33,217 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:07:45,394 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:07:52,846 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:07:53,831 ERROR: Exception on /venues/4 [DELETE] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.ForeignKeyViolation: update or delete on table "venue" violates foreign key constraint "show_venue_id_fkey" on table "show"
+DETAIL:  Key (id)=(4) is still referenced from table "show".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 237, in delete_venue
+    print(Venue.query.filter_by(id=venue_id).delete())
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 3191, in delete
+    self.session.execute(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2229, in execute
+    return self._execute_internal(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2124, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/orm/bulk_persistence.py", line 1838, in orm_execute_statement
+    return super().orm_execute_statement(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 253, in orm_execute_statement
+    result = conn.execute(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 486, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2326, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.ForeignKeyViolation) update or delete on table "venue" violates foreign key constraint "show_venue_id_fkey" on table "show"
+DETAIL:  Key (id)=(4) is still referenced from table "show".
+
+[SQL: DELETE FROM venue WHERE venue.id = %(id_1)s]
+[parameters: {'id_1': '4'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-04-09 01:08:11,147 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:08:12,513 ERROR: Exception on /venues/4 [DELETE] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 237, in delete_venue
+    print(Venue.query.filter_by(id=venue_id).all().delete())
+AttributeError: 'list' object has no attribute 'delete'
+2023-04-09 01:08:22,889 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:08:23,935 ERROR: Exception on /venues/4 [DELETE] [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/udacity_nd/lib/python3.10/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py", line 237, in delete_venue
+    print(Venue.query.filter_by(id=venue_id).all()[0].delete())
+AttributeError: 'Venue' object has no attribute 'delete'
+2023-04-09 01:08:31,831 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:08:57,687 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:534]
+2023-04-09 01:09:14,297 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:09:20,934 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:09:27,964 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:09:35,830 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:533]
+2023-04-09 01:11:44,155 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:534]
+2023-04-09 01:12:31,508 INFO: errors [in /home/abdulaziz/abdulaziz/courses/udacity/nd/fyyur/app.py:534]
