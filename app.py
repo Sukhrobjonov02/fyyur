@@ -6,7 +6,7 @@
 
 import dateutil.parser
 import babel
-from flask import render_template, request, flash, redirect, url_for, jsonify
+from flask import render_template, request, flash, redirect, url_for
 import logging
 from logging import Formatter, FileHandler
 from forms import *
@@ -103,10 +103,11 @@ def show_venue(venue_id):
   current_date = datetime.now()
 
   for show in shows:
+    artist = db.session.get(Artist, show.artist_id)
     result = {
-        "artist_id": show.artist_id,
-        "artist_name": show.artist.name,
-        "artist_image_link": show.artist.image_link,
+        "artist_id": artist.id,
+        "artist_name": artist.name,
+        "artist_image_link": artist.image_link,
         "start_time": format_datetime(str(show.start_time))
     }
   
@@ -144,7 +145,7 @@ def create_venue_form():
 def create_venue_submission():
 
   try:
-    form = VenueForm()
+    form = VenueForm(request.form)
     venue = Venue(
       name = form.name.data,
       city = form.city.data,
@@ -216,10 +217,11 @@ def show_artist(artist_id):
   current_date = datetime.now()
 
   for show in shows:
+     venue = db.session.get(Venue, show.venue_id)
      result = {
-        "venue_id": show.venue_id,
-        "venue_name": show.venue.name,
-        "venue_image_link": show.venue.image_link,
+        "venue_id": venue.id,
+        "venue_name": venue.name,
+        "venue_image_link": venue.image_link,
         "start_time": format_datetime(str(show.start_time))
      }
      upcoming_shows.append(result) if show.start_time > current_date else past_shows.append(result)
@@ -374,31 +376,37 @@ def create_artist_form():
 @app.route('/artists/create', methods=['POST'])
 def create_artist_submission():
   # called upon submitting the new artist listing form
-
+  
   try:
-    form = ArtistForm()
-    artist = Artist(
-    name = form.name.data,
-    city = form.city.data,
-    state = form.state.data,
-    genres = form.genres.data,
-    facebook_link = form.facebook_link.data,
-    image_link = form.image_link.data,
-    website_link = form.website_link.data,
-    seeking_venue =  True if form.seeking_venue=='y' else False,
-    seeking_description = form.seeking_description.data,
-    )
-
-    db.session.add(artist)
-    db.session.commit()
-    # on successful db insert, flash success
-    flash('Artist: {0} created successfully'.format(artist.name))
+    form = ArtistForm(request.form)
+    artist = None
+    if form.validate_phone(form.phone):
+      artist = Artist(
+        name = form.name.data,
+        city = form.city.data,
+        state = form.state.data,
+        genres = form.genres.data,
+        facebook_link = form.facebook_link.data,
+        image_link = form.image_link.data,
+        website_link = form.website_link.data,
+        seeking_venue =  True if form.seeking_venue.data=='y' else False,
+        seeking_description = form.seeking_description.data,
+      )
+      db.session.add(artist)
+      db.session.commit()
+      # on successful db insert, flash success
+      flash('Artist: {0} created successfully'.format(artist.name))
+    else:
+      flash('An error occurred creating the Artist')
+  except ValidationError as err:
+      flash(f'Validation error creating the Artist: {str(err)}')
+      db.session.rollback()
   except Exception as err:
-    flash('An error occurred creating the Artist: {0}. Error: {1}'.format(artist.name, err))
-    db.session.rollback()
+      flash(f'An error occurred creating the Artist: {str(err)}')
+      db.session.rollback()
   finally:
-    db.session.close()
-    return render_template('pages/home.html')
+      db.session.close()
+      return render_template('pages/home.html')
     
 
 
@@ -435,10 +443,9 @@ def create_show_submission():
   # called to create new shows in the db, upon submitting new show listing form
 
   try:
-    def form_get(name):
-       return request.form.get(name)
-    artist_id = form_get('artist_id')
-    venue_id = form_get('venue_id')
+    form = ShowForm(request.form)
+    artist_id = form.artist_id.data
+    venue_id = form.venue_id.data
     artist = Artist.query.filter_by(id=artist_id).all()[0]
     venue = Venue.query.filter_by(id=venue_id).all()[0]
     venue.artists.append(artist)
