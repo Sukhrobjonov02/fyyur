@@ -144,29 +144,26 @@ def create_venue_form():
 def create_venue_submission():
 
   try:
-    def form_get(name):
-      return request.form.get(name)
-    name = form_get('name')
-    city = form_get('city')
-    state = form_get('state')
-    address = form_get('address')
-    phone = form_get('phone')
-    genres = request.form.getlist('genres')
-    facebook_link = form_get('facebook_link')
-    image_link = form_get('image_link')
-    website_link = form_get('website_link')
-    seeking_talent = True if form_get('seeking_talent')=='y' else False
-    seeking_description = form_get('seeking_description')
-    
-    venue = Venue(name=name, city=city, state=state, address=address, phone=phone, genres=genres, \
-                 facebook_link=facebook_link, image_link=image_link, website_link=website_link, \
-                  seeking_talent=seeking_talent, seeking_description=seeking_description)
+    form = VenueForm()
+    venue = Venue(
+      name = form.name.data,
+      city = form.city.data,
+      state = form.state.data,
+      address = form.address.data,
+      phone = form.phone.data,
+      genres = form.genres.data,
+      facebook_link = form.facebook_link.data,
+      image_link = form.image_link.data,
+      website_link = form.website_link.data,
+      seeking_talent = True if form.seeking_talent=='y' else False,
+      seeking_description = form.seeking_description.data,
+    )
     db.session.add(venue)
     db.session.commit()
-    flash('Venue ' + name + ' was successfully listed!')
-  except:
+    flash('Venue: {0} created successfully'.format(venue.name))
+  except Exception as err:
+     flash('An error occurred creating the Venue: {0}. Error: {1}'.format(venue.name, err))
      db.session.rollback()
-     flash('An error occured. Venue ' + name + ' could not be listed.')
   finally:
      db.session.close()
      return render_template('pages/home.html')
@@ -267,10 +264,18 @@ def edit_artist(artist_id):
     "image_link": artist.image_link,
   }
 
-  form = ArtistForm(name=artist.name, city=artist.city, state=artist.state, phone = artist.phone,
-    genres = artist.genres, facebook_link = artist.facebook_link, image_link = artist.image_link,
-    website_link = artist.website_link, seeking_venue = artist.seeking_venue,
-    seeking_description = artist.seeking_description)
+  form = ArtistForm(
+    name=artist.name, 
+    city=artist.city, 
+    state=artist.state, 
+    phone = artist.phone,
+    genres = artist.genres, 
+    facebook_link = artist.facebook_link, 
+    image_link = artist.image_link,
+    website_link = artist.website_link, 
+    seeking_venue = artist.seeking_venue,
+    seeking_description = artist.seeking_description
+  )
 
   return render_template('forms/edit_artist.html', form=form, artist=data)
 
@@ -292,10 +297,10 @@ def edit_artist_submission(artist_id):
     artist.seeking_description = form_get('seeking_description')
 
     db.session.commit()
-    flash("Artist " + artist.name + " was successfully updated.")
-  except:
+    flash('Artist: {0} updated successfully'.format(artist.name))
+  except Exception as err:
+     flash('An error occurred updating the Artist: {0}. Error: {1}'.format(artist.name, err))
      db.session.rollback()
-     flash("An error occured. Artist " + artist.name + " could not be updated")
   finally:
      db.session.close()
      return redirect(url_for('show_artist', artist_id=artist_id))
@@ -346,13 +351,17 @@ def edit_venue_submission(venue_id):
     venue.seeking_description = form_get('seeking_description')
 
     db.session.commit()
-    flash("Venue " + venue.name + " was successfully updated.")
-  except:
-    db.session.rollback()
-    flash("An error occured. Venue " + venue.name + " could not be updated")
+    flash('Venue: {0} updated successfully'.format(venue.name))
+  except Exception as err:
+     flash('An error occurred updating the Venue: {0}. Error: {1}'.format(venue.name, err))
+     db.session.rollback()
   finally:
     db.session.close()
     return redirect(url_for('show_venue', venue_id=venue_id))
+
+
+
+  
 
 #  Create Artist
 #  ----------------------------------------------------------------
@@ -367,29 +376,26 @@ def create_artist_submission():
   # called upon submitting the new artist listing form
 
   try:
-    def form_get(name):
-        return request.form.get(name)
-    name = form_get('name')
-    city = form_get('city')
-    state = form_get('state')
-    genres = request.form.getlist('genres')
-    facebook_link = form_get('facebook_link')
-    image_link = form_get('image_link')
-    website_link = form_get('website_link')
-    seeking_venue =  True if form_get('seeking_talent')=='y' else False
-    seeking_description = form_get('seeking_description')
+    form = ArtistForm()
+    artist = Artist(
+    name = form.name.data,
+    city = form.city.data,
+    state = form.state.data,
+    genres = form.genres.data,
+    facebook_link = form.facebook_link.data,
+    image_link = form.image_link.data,
+    website_link = form.website_link.data,
+    seeking_venue =  True if form.seeking_venue=='y' else False,
+    seeking_description = form.seeking_description.data,
+    )
 
-    artist = Artist(name=name, city=city, state=state, genres=genres, facebook_link=facebook_link, \
-      image_link=image_link, website_link=website_link, seeking_venue=seeking_venue, seeking_description=seeking_description)
-    
     db.session.add(artist)
     db.session.commit()
     # on successful db insert, flash success
-    flash('Artist ' + name + ' was successfully listed!')
-  except Exception as exc:
+    flash('Artist: {0} created successfully'.format(artist.name))
+  except Exception as err:
+    flash('An error occurred creating the Artist: {0}. Error: {1}'.format(artist.name, err))
     db.session.rollback()
-    print(exc)
-    flash('An error occurred. Artist ' + name + ' could not be listed.')
   finally:
     db.session.close()
     return render_template('pages/home.html')
@@ -433,17 +439,15 @@ def create_show_submission():
        return request.form.get(name)
     artist_id = form_get('artist_id')
     venue_id = form_get('venue_id')
-    start_time = form_get('start_time')
     artist = Artist.query.filter_by(id=artist_id).all()[0]
     venue = Venue.query.filter_by(id=venue_id).all()[0]
     venue.artists.append(artist)
     db.session.add(venue)
     db.session.commit()
-    flash('Show was successfully listed!')
-  except Exception as exc:
+    flash('Show: created successfully')
+  except Exception as err:
     db.session.rollback()
-    print(exc)
-    flash('An error occurred. Show could not be listed.')
+    flash('An error occurred creating the Venue. Error: {1}'.format(err))
   finally:
     db.session.close()
     return render_template('pages/home.html')
