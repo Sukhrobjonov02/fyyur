@@ -146,24 +146,33 @@ def create_venue_submission():
 
   try:
     form = VenueForm(request.form)
-    venue = Venue(
-      name = form.name.data,
-      city = form.city.data,
-      state = form.state.data,
-      address = form.address.data,
-      phone = form.phone.data,
-      genres = form.genres.data,
-      facebook_link = form.facebook_link.data,
-      image_link = form.image_link.data,
-      website_link = form.website_link.data,
-      seeking_talent = True if form.seeking_talent=='y' else False,
-      seeking_description = form.seeking_description.data,
-    )
-    db.session.add(venue)
-    db.session.commit()
-    flash('Venue: {0} created successfully'.format(venue.name))
+    venue = None
+    if form.validate_phone(form.phone):
+      venue = Venue(
+        name = form.name.data,
+        city = form.city.data,
+        state = form.state.data,
+        address = form.address.data,
+        phone = form.phone.data,
+        genres = form.genres.data,
+        facebook_link = form.facebook_link.data,
+        image_link = form.image_link.data,
+        website_link = form.website_link.data,
+        seeking_talent = bool(form.seeking_talent.data),
+        seeking_description = form.seeking_description.data,
+      )
+      db.session.add(venue)
+      db.session.commit()
+      # on successful db insert, flash success
+      flash('Venue: {0} created successfully'.format(venue.name))
+  except ValidationError as err:
+     flash(str(err))
+     db.session.rollback()
+  except AttributeError as err:
+     flash(str(err))
+     db.session.rollback()  
   except Exception as err:
-     flash('An error occurred creating the Venue: {0}. Error: {1}'.format(venue.name, err))
+     flash('An error occurred creating the Venue: {0}. Error: {1}'.format(form.name.data, err))
      db.session.rollback()
   finally:
      db.session.close()
@@ -284,24 +293,28 @@ def edit_artist(artist_id):
 @app.route('/artists/<int:artist_id>/edit', methods=['POST'])
 def edit_artist_submission(artist_id):
   try:
-    artist = Artist.query.get(artist_id)
-    def form_get(name):
-       return request.form.get(name)
-    artist.name = form_get('name')
-    artist.city = form_get('city')
-    artist.state = form_get('state')
-    artist.phone = form_get('phone')
-    artist.genres = request.form.getlist('genres')
-    artist.facebook_link = form_get('facebook_link')
-    artist.image_link = form_get('image_link')
-    artist.website_link = form_get('website_link')
-    artist.seeking_venue = form_get('seeking_venue')
-    artist.seeking_description = form_get('seeking_description')
+    form = ArtistForm(request.form)
+  
+    artist = db.session.get(Artist, artist_id)
+    artist.name =form.name.data
+    artist.city = form.city.data
+    artist.state = form.state.data
+    artist.phone = form.phone.data
+    artist.genres = form.genres.data
+    artist.facebook_link = form.facebook_link.data
+    artist.image_link = form.image_link.data
+    artist.website_link = form.website_link.data
+    artist.seeking_venue = bool(form.seeking_venue.data)
+    artist.seeking_description = form.seeking_description.data
 
     db.session.commit()
+    # on successful db insert, flash success
     flash('Artist: {0} updated successfully'.format(artist.name))
+  except ValidationError as err:
+     flash(str(err))
+     db.session.rollback()
   except Exception as err:
-     flash('An error occurred updating the Artist: {0}. Error: {1}'.format(artist.name, err))
+     flash('An error occurred editing the Artist: {0}. Error: {1}'.format(form.name.data, err))
      db.session.rollback()
   finally:
      db.session.close()
@@ -389,20 +402,18 @@ def create_artist_submission():
         facebook_link = form.facebook_link.data,
         image_link = form.image_link.data,
         website_link = form.website_link.data,
-        seeking_venue =  True if form.seeking_venue.data=='y' else False,
+        seeking_venue =  bool(form.seeking_venue.data),
         seeking_description = form.seeking_description.data,
       )
       db.session.add(artist)
       db.session.commit()
       # on successful db insert, flash success
       flash('Artist: {0} created successfully'.format(artist.name))
-    else:
-      flash('An error occurred creating the Artist')
   except ValidationError as err:
-      flash(f'Validation error creating the Artist: {str(err)}')
+      flash(str(err))
       db.session.rollback()
   except Exception as err:
-      flash(f'An error occurred creating the Artist: {str(err)}')
+      flash('An error occurred creating the Artist: {0}. Error: {1}'.format(form.name.data, err))
       db.session.rollback()
   finally:
       db.session.close()
@@ -454,7 +465,7 @@ def create_show_submission():
     flash('Show: created successfully')
   except Exception as err:
     db.session.rollback()
-    flash('An error occurred creating the Venue. Error: {1}'.format(err))
+    flash('An error occurred creating the Show')
   finally:
     db.session.close()
     return render_template('pages/home.html')
