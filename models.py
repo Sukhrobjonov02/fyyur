@@ -1,14 +1,6 @@
 from settings import db
 from datetime import datetime
 
-# class Show(db.Model):
-#    __tablename__ = 'shows'
-
-#    venue_id = db.Column(db.Integer, db.ForeignKey('venue.id'), primary_key=True)
-#    artist_id = db.Column(db.Integer, db.ForeignKey('artist.id'), primary_key=True)
-#    start_time = db.Column(db.DateTime, default=datetime.today(), primary_key=True)
-#    artist = db.relationship("Artist", back_populates="show_artist")
-#    venue = db.relationship("Venue", back_populates="show_venue")
 shows_table = Table = db.Table('shows',
     db.Column('venue_id', db.Integer, db.ForeignKey('venues.id'), nullable=False),
     db.Column('artist_id', db.Integer, db.ForeignKey('artists.id'), nullable=False),
